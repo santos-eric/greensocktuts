@@ -44,12 +44,18 @@ button {
   align-items: center;
   cursor: pointer;
 }
+button:hover svg {
+  transform: translateX(10px);
+}
 button * {
   flex: 1;
 }
 button span {
   white-space: nowrap;
   font-size: clamp(1.2rem, 1.5vw, 4rem);
+}
+button span:hover {
+  text-decoration: underline;
 }
 button svg {
   width: 20px;

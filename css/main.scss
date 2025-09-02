@@ -50,6 +50,12 @@ button {
     background: none;
     align-items: center;
     cursor: pointer;
+
+    // move the svg to the right, x-axis
+    &:hover svg {
+        transform: translateX(10px);
+    }
+
     * {
         flex: 1;
     }
@@ -57,6 +63,11 @@ button {
     span {
         white-space: nowrap;
         font-size: clamp(1.2rem, 1.5vw, 4rem);
+
+        // on hover underline the text
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     svg {
