@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>greensocktuts</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
-        <h1>It is absolutely necessary to keep improving</h1>
+        <h1>HI, THIS IS ERIC SANTOS</h1>
         <button>
             <span>Give me another tip</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
@@ -19,6 +24,24 @@
 
         </button>
     </div>
+
+    <script>
+        // will show all the properties available to change in h1
+        // console.log(document.querySelector('h1'))
+
+        let quote = 'It is absolutely necessary to keep improving'
+        const title = document.querySelector('h1')
+        const button = document.querySelector('button')
+
+        // basic DOM manipulation, assign text to quote and change it when button is clicked
+
+        button.addEventListener('click', changeQuote)
+
+        function changeQuote() {
+            title.innerText = quote
+        }
+
+    </script>
 
 </body>
 
